@@ -51,7 +51,8 @@ Use Python scripts within the DAG to save the scraped data to an Amazon S3 bucke
 
 Shut Down Airflow:
 
-The screenshot of Docker 
+The screenshot of Docker: 
+
 <img width="956" alt="image" src="https://github.com/user-attachments/assets/2c7be1ab-59fd-4f50-81cf-b82470d5a539">
 
 
@@ -61,6 +62,7 @@ Copy code
 docker-compose down
 This setup ensures your data scraping process is automated, efficient, and scalable, with data securely stored in Amazon S3 for further analysis and use.
 
-The screenshot of scraping job source
+The screenshot of scraping job source:
+
 <img width="944" alt="image" src="https://github.com/user-attachments/assets/631494bd-5f05-4ca2-9e08-809dcd63a40a">
 
