@@ -1,24 +1,58 @@
-airflow
-#This is the python script where it activates airflow. First off
+Automating Data Scraping with Apache Airflow
+Introduction:
+Harness the power of Apache Airflow to automate web scraping of raw data from LinkedIn and Indeed, storing it seamlessly in an Amazon S3 bucket. This guide walks you through using Docker to install and configure Airflow, creating a Directed Acyclic Graph (DAG) to manage your scraping workflow, and ensuring your data is securely saved in the cloud.
 
-using Apache Airflow with Docker, including installation and creating a DAG (Directed Acyclic Graph) file.
+Step-by-Step Guide:
+Step 1: Install Docker
+Download Docker:
 
-Step 1: Install Docker Download Docker:
+Windows/Mac: Download Docker Desktop from the Docker website and follow the installation instructions.
+Linux: Follow the installation instructions provided here.
+Install Docker:
 
-For Windows/Mac: Download Docker Desktop from here and follow the installation instructions. For Linux: Follow the instructions here. Install Docker: https://hub.docker.com/
+Windows/Mac: Run the downloaded installer and complete the setup. Ensure Docker Desktop is running.
+Linux: Use terminal commands from the Docker installation page to set up Docker.
+Verify Installation:
 
-Windows/Mac: Run the downloaded installer and follow the setup steps. Ensure Docker Desktop is running. Linux: Use the terminal commands from the Docker installation page to set up Docker. Verify Installation:
+Open a terminal or command prompt and run:
+sh
+Copy code
+docker --version
+You should see the Docker version information if the installation was successful.
+Step 2: Set Up Apache Airflow with Docker
+Pull the Apache Airflow Docker Image:
 
-Open a terminal (or command prompt on Windows) and run: sh Copy code docker --version You should see the Docker version information if the installation was successful. Step 2: Set Up Apache Airflow with Docker Pull the Apache Airflow Docker Image:
+Open a terminal and run:
+sh
+Copy code
+docker pull apache/airflow
+Download and Configure Files:
 
-Open a terminal and run: sh
+Download welcome.py and docker-compose.yaml.
+Open these files in Visual Studio Code.
+Run Docker Compose:
 
-Then download the welcome.py and docker-composer.yaml Make sure you open these files in Visual Studio Code and run the docker-composer.yaml by right click the file name on the right bar and click compose up or type docker composer up in the terminal.
+Right-click docker-compose.yaml in Visual Studio Code and select Compose Up, or run the following command in the terminal:
+sh
+Copy code
+docker-compose up
+This will start running Airflow.
+Create a DAG for Web Scraping:
 
-This will start running the airflow
+Create a new folder named DAGS in the Airflow-Docker directory.
+Save Welcome_dag.py in the DAGS folder.
+View DAG in Airflow:
 
-Then you create a new folder called DAGS in Airflow-Docker and save Welcome_dag.py in the folder.
+The containers created in the DAG file will be visible in the Airflow application.
+Step 3: Storing Data in Amazon S3
+Configure your DAG to scrape data from LinkedIn and Indeed.
 
-The containers that you created in DAG file will show in Airflow application.
+Use Python scripts within the DAG to save the scraped data to an Amazon S3 bucket.
 
-Once you are done airflow- right click compose down or type docker compose down 
+Shut Down Airflow:
+
+When finished, right-click docker-compose.yaml and select Compose Down, or run:
+sh
+Copy code
+docker-compose down
+This setup ensures your data scraping process is automated, efficient, and scalable, with data securely stored in Amazon S3 for further analysis and use.
