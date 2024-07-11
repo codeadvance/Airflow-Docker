@@ -51,6 +51,10 @@ Use Python scripts within the DAG to save the scraped data to an Amazon S3 bucke
 
 Shut Down Airflow:
 
+The screenshot of Docker 
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/2c7be1ab-59fd-4f50-81cf-b82470d5a539">
+
+
 When finished, right-click docker-compose.yaml and select Compose Down, or run:
 sh
 Copy code
