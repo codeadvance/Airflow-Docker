@@ -13,10 +13,12 @@ Open a terminal (or command prompt on Windows) and run: sh Copy code docker --ve
 
 Open a terminal and run: sh
 
-Then download the main.py and docker-composer.yaml Make sure you open these files in Visual Studio Code and run the docker-composer.yaml by right click the file name on the right bar and click compose up.
+Then download the welcome.py and docker-composer.yaml Make sure you open these files in Visual Studio Code and run the docker-composer.yaml by right click the file name on the right bar and click compose up or type docker composer up in the terminal.
 
 This will start running the airflow
 
 Then you create a new folder called DAGS in Airflow-Docker and save Welcome_dag.py in the folder.
 
 The containers that you created in DAG file will show in Airflow application.
+
+Once you are done airflow- right click compose down or type docker compose down 
