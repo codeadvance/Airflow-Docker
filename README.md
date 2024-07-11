@@ -1,8 +1,8 @@
-Automating Data Scraping with Apache Airflow
-Introduction:
+# Automating Data Scraping with Apache Airflow
+## Introduction:
 Harness the power of Apache Airflow to automate web scraping of raw data from LinkedIn and Indeed, storing it seamlessly in an Amazon S3 bucket. This guide walks you through using Docker to install and configure Airflow, creating a Directed Acyclic Graph (DAG) to manage your scraping workflow, and ensuring your data is securely saved in the cloud.
 
-Step-by-Step Guide:
+## Step-by-Step Guide:
 Step 1: Install Docker
 Download Docker:
 
