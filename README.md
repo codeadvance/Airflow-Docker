@@ -60,3 +60,7 @@ sh
 Copy code
 docker-compose down
 This setup ensures your data scraping process is automated, efficient, and scalable, with data securely stored in Amazon S3 for further analysis and use.
+
+The screenshot of scraping job source
+<img width="944" alt="image" src="https://github.com/user-attachments/assets/631494bd-5f05-4ca2-9e08-809dcd63a40a">
+
